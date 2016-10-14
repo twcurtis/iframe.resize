@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <title>PARENT</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="node_modules/iframe-resizer/js/iframeResizer.min.js"></script>
+        <script type="text/javascript">
+          document.addEventListener("DOMContentLoaded", function () {
+            iFrameResize({ log: true }, document.getElementById("target-iframe"))
+            console.log('iframe resizer attached.');
+          })
+        </script>
+    </head>
+    <body>
+      <div class="header">
+        <p class="header--text">Header</p>
+      </div>
+      <iframe id="target-iframe" src="iframe.html"></iframe>
+      <div class="footer">
+        <p class="footer--text">Footer</p>
+      </div>
+    </body>
+</html>
